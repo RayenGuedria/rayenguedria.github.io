@@ -17,12 +17,14 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link href="images/favicon.png" rel="icon">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href=""><span>W</span>elcome</a>
+      <a class="navbar-brand" href=""><span>R</span>ayen Guedria</a>
       <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
         data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -38,6 +40,18 @@
           <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
         -->
           <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          <li class="nav-item">
+            <div class="nav-tools">
+              <a href="fr/index.html" class="nav-tool" title="Voir en français" aria-label="Français">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+                <span class="lang-code">FR</span>
+              </a>
+              <button type="button" id="theme-toggle" class="nav-tool" title="Toggle light/dark theme" aria-label="Toggle theme">
+                <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              </button>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -172,7 +186,7 @@
                 <span class="flaticon-ideas"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">September 2023 – June 2027</span>
+                <span class="date">September 2023 – May 2026</span>
                 <h2>Engineering Degree in Information and Communications Technology</h2>
                 <span class="position">ENIG - National Engineering School of Gabes.</span>
                 <p>Equipping myself with the design, development, implementation, and maintenance of technology across various ICT domains, including networking, cybersecurity, software engineering, and data analysis.</p>
@@ -189,12 +203,7 @@
                 <p>Established a strong technical foundation through hard work and adaptability. Mastered core skills and prepared for further education and technical careers.</p>
               </div>
             </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-ideas"></span>
-              </div>
-            </div>
-            
+
           </div>
           <div id="page-2" class="page two">
             <h2 class="heading">Experience</h2>
@@ -203,7 +212,7 @@
                 <span class="flaticon-ideas"></span>
               </div>
               <div class="text pl-3">
-                <span class="date">September 2023 – June 2027</span>
+                <span class="date">September 2023 – May 2026</span>
                 <h2>ICT Student</h2>
                 <span class="position">ENIG - National Engineering School of Gabes.</span>
                 <p>ICT student with a passion for technology's potential. Skilled in core areas like hardware, software, and networking, and eager to leverage them for real-world impact.</p>
@@ -951,8 +960,8 @@
 
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About</h2>
-            <p></p>
+            <h2 class="ftco-heading-2">About Me</h2>
+            <p>ICT engineering student and cybersecurity enthusiast based in Monastir, Tunisia. I focus on offensive security, CTFs, and AI-driven security research — always learning, always building.</p>
             <!--
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -1008,16 +1017,6 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            Copyright &copy;
-            <script data-cfasync="false"
-              src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made by <a href="#">Rayen Guedria</a>
-          </p>
-        </div>
-      </div>
     </div>
   </footer>
 
@@ -1040,6 +1039,7 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/prefs.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>

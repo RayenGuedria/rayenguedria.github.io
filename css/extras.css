@@ -1,0 +1,139 @@
+/* ===== Navbar utility icons (language + theme toggle) ===== */
+.nav-tools {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.nav-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  border-radius: 50%;
+  color: #1a1a1a;
+  background: rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .15);
+  cursor: pointer;
+  transition: all .2s ease;
+  text-decoration: none;
+  position: relative;
+}
+.nav-tool:hover,
+.nav-tool:focus {
+  color: #fff;
+  background: #004d40;
+  border-color: #004d40;
+  transform: translateY(-2px);
+}
+.nav-tool svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.nav-tool .lang-code {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 3px;
+  border-radius: 4px;
+  background: #004d40;
+  color: #fff;
+}
+/* dark/light icon swap */
+.nav-tool .icon-sun { display: none; }
+html[data-theme="dark"] .nav-tool .icon-sun { display: block; }
+html[data-theme="dark"] .nav-tool .icon-moon { display: none; }
+/* when navbar is scrolled (white bg on light theme) make icons dark */
+.ftco-navbar-light.scrolled .nav-tool {
+  color: #000;
+  background: rgba(0, 0, 0, .06);
+  border-color: rgba(0, 0, 0, .18);
+}
+.ftco-navbar-light.scrolled .nav-tool:hover {
+  color: #fff;
+  background: #004d40;
+  border-color: #004d40;
+}
+@media (max-width: 991.98px) {
+  .nav-tools { margin: 10px 0 0 0; }
+  .nav-tool { color: #000; background: rgba(0,0,0,.06); border-color: rgba(0,0,0,.18); }
+}
+
+/* ===== Dark theme ===== */
+html[data-theme="dark"] body {
+  background-color: #14161a !important;
+  color: #d7dae0 !important;
+}
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .contact-section .box {
+  background-color: #1e2127 !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .5) !important;
+}
+html[data-theme="dark"] .resume-wrap .text h2,
+html[data-theme="dark"] .heading-section h2,
+html[data-theme="dark"] .heading,
+html[data-theme="dark"] h1, html[data-theme="dark"] h2,
+html[data-theme="dark"] h3, html[data-theme="dark"] h4,
+html[data-theme="dark"] .bg-white h2 {
+  color: #f2f4f8 !important;
+}
+/* keep the big faded watermark heading subtle (don't turn it solid white) */
+html[data-theme="dark"] .heading-section h1.big {
+  color: rgba(255, 255, 255, 0.05) !important;
+}
+html[data-theme="dark"] .about-info li span,
+html[data-theme="dark"] .resume-wrap .date,
+html[data-theme="dark"] .resume-wrap p,
+html[data-theme="dark"] p {
+  color: #aeb4bf !important;
+}
+/* institution/company subtitle is hardcoded #000 in the template */
+html[data-theme="dark"] .resume-wrap .position {
+  color: #cfd4dd !important;
+}
+html[data-theme="dark"] .progress-wrap h3,
+html[data-theme="dark"] .counter-wrap .text p span {
+  color: #e6e9ef !important;
+}
+html[data-theme="dark"] a { color: #4db6a5; }
+html[data-theme="dark"] a:hover { color: #80cbc4; }
+html[data-theme="dark"] #navi ul li a { color: #aeb4bf; }
+html[data-theme="dark"] #navi ul li a:hover { color: #4db6a5; }
+html[data-theme="dark"] .ftco-navbar-light.scrolled {
+  background: #1e2127 !important;
+}
+html[data-theme="dark"] .ftco-navbar-light.scrolled .nav-item > .nav-link,
+html[data-theme="dark"] .ftco-navbar-light.scrolled .nav-link,
+html[data-theme="dark"] .ftco-navbar-light.scrolled .navbar-brand {
+  color: #f2f4f8 !important;
+}
+html[data-theme="dark"] .ftco-navbar-light.scrolled .nav-tool {
+  color: #f2f4f8;
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .2);
+}
+html[data-theme="dark"] .contact-section .contact-info p a { color: #4db6a5; }
+/* navbar contrast at top (non-scrolled) in dark theme */
+html[data-theme="dark"] .ftco-navbar-light .navbar-brand,
+html[data-theme="dark"] .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  color: #f2f4f8 !important;
+}
+html[data-theme="dark"] .nav-tool {
+  color: #f2f4f8;
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .2);
+}
+html[data-theme="dark"] .nav-tool:hover {
+  color: #fff;
+  background: #004d40;
+  border-color: #004d40;
+}
