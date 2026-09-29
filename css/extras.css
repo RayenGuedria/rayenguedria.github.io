@@ -104,6 +104,11 @@ html[data-theme="dark"] .progress-wrap h3,
 html[data-theme="dark"] .counter-wrap .text p span {
   color: #e6e9ef !important;
 }
+/* skill percentages: circle value + bar label are hardcoded #000 */
+html[data-theme="dark"] .progress-bar span,
+html[data-theme="dark"] .progress-circle .progress-value .h2 {
+  color: #f2f4f8 !important;
+}
 html[data-theme="dark"] a { color: #4db6a5; }
 html[data-theme="dark"] a:hover { color: #80cbc4; }
 html[data-theme="dark"] #navi ul li a { color: #aeb4bf; }
